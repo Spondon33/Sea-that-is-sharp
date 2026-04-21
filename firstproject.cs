@@ -11,30 +11,11 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            int age = 25;
-            Console.WriteLine(age);
-            Console.WriteLine(int.MaxValue);
-            Console.WriteLine(int.MinValue);
-
-            long population = 7800000000;
-            Console.WriteLine(population);
-            Console.WriteLine(long.MaxValue);
-            Console.WriteLine(long.MinValue);
-
-            double price = 19.99;
-            Console.WriteLine(price);
-            Console.WriteLine(double.MaxValue);
-            Console.WriteLine(double.MinValue);
-
-            float temperature = 36.5f;
-            Console.WriteLine(temperature);
-            Console.WriteLine(float.MaxValue);
-            Console.WriteLine(float.MinValue);
-
-            decimal salary = 50000.00M;
-            Console.WriteLine(salary);
-            Console.WriteLine(decimal.MaxValue);
-            Console.WriteLine(decimal.MinValue);
+            string name = "John";
+            char grade = 'A';
+            Console.WriteLine(name);
+            Console.WriteLine();
+            Console.WriteLine(grade);
             // Console.ReadLine();
         }
     }
