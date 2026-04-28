@@ -11,43 +11,39 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            // ++, --, +=, -=, *=, /=
-            int age = 25;
-            age++;
-            Console.WriteLine(age);
-            age--;
-            Console.WriteLine(age);
-            age *= 10;
-            Console.WriteLine(age);
-            age /= 10;
-            Console.WriteLine(age);
-            double pr = 26;
-            pr /= 5;
-            Console.WriteLine(pr);
+            //with the var keyword, the compiler can detect the data type from the assigned value.
 
-            string name = "John";
-            name += " is programming";
-            // name -=" is programming"; ---> NOT POSSIBLE 
+            // int age = 20;
+            var age = 20; 
+            Console.WriteLine(age);
+
+            // long population = 7800000000;
+            var population = 7800000000;
+            Console.WriteLine(population);
+
+            // double negative = -3.14;
+            var negative = -3.14;
+            Console.WriteLine(negative);
+
+            // float precision = 3.141592654f;
+            var precision = 3.141592654f;
+            Console.WriteLine(precision);
+
+            // decimal money = 100.50m;
+            var money = 100.50m;
+            Console.WriteLine(money);
+
+            // string name = "John";
+            var name = "John";
             Console.WriteLine(name);
 
-            char ch = 'a';
-            ch += 'b'; // this will add the ASCII values of 'a' and 'b' and assign it to ch
-            Console.WriteLine(ch);
+            // char grade = 'A';
+            var grade = 'A';
+            Console.WriteLine(grade);
 
-            int i = 0;
-            i++;
-            Console.WriteLine(i);
-
-            int j = 0;
-            Console.WriteLine(j++);
-            Console.WriteLine(j);
-
-            int firstnum = 10;
-            int secondnum = 3;
-            Console.WriteLine(firstnum / secondnum);
-            Console.WriteLine(firstnum % secondnum); // this will give the remainder of the division of firstnum by secondnum
-
-            
+            //bool isStudent = true;
+            var isStudent = true;
+            Console.WriteLine(isStudent);
         }
     }
 }
