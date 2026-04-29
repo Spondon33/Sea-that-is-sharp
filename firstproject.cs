@@ -11,15 +11,13 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            // const Keyword
+            // Console.ReadLine(); ---> to take input from user
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
 
-            const int vat = 20; // constant variable, cannot be changed after initialization
-            const double percentVat = vat / 100d;
-            int balance = 1000;
-
-            Console.WriteLine(balance * (vat / 100d));
-            Console.WriteLine(balance * percentVat);
-
+            Console.WriteLine("Hello " + name + "!" + " You are " + age + " years old.");
         }
     }
 }
