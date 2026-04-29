@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Channels;
@@ -11,32 +12,35 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            // Console.ReadLine(); ---> to take input from user
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter your age: ");
-            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter a day number of the week (1-7):");
+            int day = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Hello " + name + "!" + " You are " + age + " years old.");
-            if (age < 10 && age > 0)
+            switch (day)
             {
-                Console.WriteLine("How can u even code ? :) ");
-            }
-            else if (age >= 10 && age < 18)
-            {
-                Console.WriteLine("You're still a kid XD");
-            }
-            else if (age >= 18 && age < 60)
-            {
-                Console.WriteLine("Respect to you big bro");
-            }
-            else if (age >= 60)
-            {
-                Console.WriteLine("y r u coding?? go spend time with your family. u might die soon :D ");
-            }
-            else
-            {
-                Console.WriteLine("Invalid age entered.");
+                case 1:
+                    Console.WriteLine("Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 6:
+                    Console.WriteLine("Friday");
+                    break;
+                case 7:
+                    Console.WriteLine("Saturday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid day number. Please enter a number between 1 and 7.");
+                    break;
             }
         }
     }
