@@ -12,35 +12,23 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a day number of the week (1-7):");
-            int day = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("How many times do you want to repeat your message?");
+            Console.Write("Ans: ");
+            int counter = Convert.ToInt32(Console.ReadLine());
 
-            switch (day)
+            if (counter <= 0)
             {
-                case 1:
-                    Console.WriteLine("Sunday");
-                    break;
-                case 2:
-                    Console.WriteLine("Monday");
-                    break;
-                case 3:
-                    Console.WriteLine("Tuesday");
-                    break;
-                case 4:
-                    Console.WriteLine("Wednesday");
-                    break;
-                case 5:
-                    Console.WriteLine("Thursday");
-                    break;
-                case 6:
-                    Console.WriteLine("Friday");
-                    break;
-                case 7:
-                    Console.WriteLine("Saturday");
-                    break;
-                default:
-                    Console.WriteLine("Invalid day number. Please enter a number between 1 and 7.");
-                    break;
+                Console.WriteLine("Invalid Number! PLs try again.");
+            }
+            else
+            {
+                Console.Write("Enter your message: ");
+                string message = Console.ReadLine();
+
+                for (int i = 0; i < counter; i++)
+                {
+                    Console.WriteLine(message);
+                }
             }
         }
     }
