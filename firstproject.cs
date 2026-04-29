@@ -11,39 +11,15 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            //with the var keyword, the compiler can detect the data type from the assigned value.
+            // const Keyword
 
-            // int age = 20;
-            var age = 20; 
-            Console.WriteLine(age);
+            const int vat = 20; // constant variable, cannot be changed after initialization
+            const double percentVat = vat / 100d;
+            int balance = 1000;
 
-            // long population = 7800000000;
-            var population = 7800000000;
-            Console.WriteLine(population);
+            Console.WriteLine(balance * (vat / 100d));
+            Console.WriteLine(balance * percentVat);
 
-            // double negative = -3.14;
-            var negative = -3.14;
-            Console.WriteLine(negative);
-
-            // float precision = 3.141592654f;
-            var precision = 3.141592654f;
-            Console.WriteLine(precision);
-
-            // decimal money = 100.50m;
-            var money = 100.50m;
-            Console.WriteLine(money);
-
-            // string name = "John";
-            var name = "John";
-            Console.WriteLine(name);
-
-            // char grade = 'A';
-            var grade = 'A';
-            Console.WriteLine(grade);
-
-            //bool isStudent = true;
-            var isStudent = true;
-            Console.WriteLine(isStudent);
         }
     }
 }
