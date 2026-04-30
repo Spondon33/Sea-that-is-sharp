@@ -12,24 +12,29 @@ namespace firstproject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How many times do you want to repeat your message?");
-            Console.Write("Ans: ");
-            int counter = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter your first number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
 
-            if (counter <= 0)
-            {
-                Console.WriteLine("Invalid Number! PLs try again.");
-            }
-            else
-            {
-                Console.Write("Enter your message: ");
-                string message = Console.ReadLine();
+            Console.Write("Enter your second number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
-                for (int i = 0; i < counter; i++)
+            int solution = num1 * num2;
+            int answer = 0;
+
+            Console.WriteLine("What is " + num1 + " x " + num2 + " ?");
+            
+            while (answer != solution)
+            {
+                Console.Write("Ans: ");
+                answer = Convert.ToInt32(Console.ReadLine());
+
+                if (answer != solution)
                 {
-                    Console.WriteLine(message);
+                    Console.WriteLine("Wrong Answer! Try Again.");
                 }
             }
+
+            Console.WriteLine("Your Answer is Correct! Well Done!");
         }
     }
 }
