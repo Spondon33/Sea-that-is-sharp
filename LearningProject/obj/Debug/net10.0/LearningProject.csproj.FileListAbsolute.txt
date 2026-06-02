@@ -1,0 +1,15 @@
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/bin/Debug/net10.0/LearningProject
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/bin/Debug/net10.0/LearningProject.deps.json
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/bin/Debug/net10.0/LearningProject.runtimeconfig.json
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/bin/Debug/net10.0/LearningProject.dll
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/bin/Debug/net10.0/LearningProject.pdb
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.AssemblyInfoInputs.cache
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.AssemblyInfo.cs
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.csproj.CoreCompileInputs.cache
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.sourcelink.json
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.dll
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/refint/LearningProject.dll
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.pdb
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/LearningProject.genruntimeconfig.cache
+/Users/nurulaminkh/Sea-that-is-sharp/LearningProject/obj/Debug/net10.0/ref/LearningProject.dll

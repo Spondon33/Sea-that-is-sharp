@@ -1,13 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Channels;
-using System.Threading.Tasks;
 
-namespace firstproject
+namespace Program
 {
     class Program
     {
@@ -15,14 +8,14 @@ namespace firstproject
         {
             double value = 1000 / 12.34;
             Console.WriteLine(value);
-            Console.WriteLine(String.Format("{0:0}", value));
-            Console.WriteLine(String.Format("{0:0.0}", value));
-            Console.WriteLine(String.Format("{0:0.00}", value));
-            Console.WriteLine(String.Format("{0:0.#}", value));
+            Console.WriteLine($"{value:0}");
+            Console.WriteLine($"{value:0.0}");
+            Console.WriteLine($"{value:0.00}");
+            Console.WriteLine($"{value:0.#}");
 
             double money = -10d / 3d;
             Console.WriteLine(money);
-            Console.WriteLine(String.Format("${0:0.00}", money));
+            Console.WriteLine($"{money:C}");
             Console.WriteLine(money.ToString("C"));
             Console.WriteLine(money.ToString("C0"));
             Console.WriteLine(money.ToString("C1"));
