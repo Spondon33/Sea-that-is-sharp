@@ -1,30 +1,28 @@
+using System;
 using System.Globalization;
 
-namespace Program
+namespace Program0
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double value = 1000 / 12.34;
-            Console.WriteLine(value);
-            Console.WriteLine($"{value:0}");
-            Console.WriteLine($"{value:0.0}");
-            Console.WriteLine($"{value:0.00}");
-            Console.WriteLine($"{value:0.#}");
-
-            double money = -10d / 3d;
-            Console.WriteLine(money);
-            Console.WriteLine($"{money:C}");
-            Console.WriteLine(money.ToString("C"));
-            Console.WriteLine(money.ToString("C0"));
-            Console.WriteLine(money.ToString("C1"));
-            Console.WriteLine(money.ToString("C2"));
-
-            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
-
+            bool success = true;
+            while (success)
+            {
+                Console.Write("Enter a number: ");
+                String input = Console.ReadLine();
+                
+                if (int.TryParse(input, out int num))
+                {
+                    success = false;
+                    Console.WriteLine(num);
+                }
+                else
+                {
+                    Console.WriteLine("Failed to parse input.");
+                }
+            }
         }
     }
 }
