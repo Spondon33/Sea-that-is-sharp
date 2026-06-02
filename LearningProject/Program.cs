@@ -11,7 +11,7 @@ namespace Program0
             while (success)
             {
                 Console.Write("Enter a number: ");
-                String input = Console.ReadLine();
+                String? input = Console.ReadLine();
                 
                 if (int.TryParse(input, out int num))
                 {
