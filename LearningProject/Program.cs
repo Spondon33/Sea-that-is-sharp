@@ -1,26 +1,31 @@
 using System;
 using System.Globalization;
 
-namespace Program0
+namespace Program
 {
     class Program
     {
         static void Main(string[] args)
         {
-            bool success = true;
-            while (success)
+            Console.Write("Enter a number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= num; i++)
             {
-                Console.Write("Enter a number: ");
-                String? input = Console.ReadLine();
-                
-                if (int.TryParse(input, out int num))
+                if (i % 3 == 0 && i % 5 == 0)
                 {
-                    success = false;
-                    Console.WriteLine(num);
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
                 }
                 else
                 {
-                    Console.WriteLine("Failed to parse input.");
+                    Console.WriteLine(i);
                 }
             }
         }

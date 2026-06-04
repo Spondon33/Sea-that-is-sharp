@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Program
+namespace FizzBuzz
 {
     class Program
     {
